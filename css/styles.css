@@ -1,0 +1,64 @@
+body {
+  background-color: #ffc0cb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.heart {
+  position: absolute;
+}
+.large-heart {
+  width: 140px;
+}
+.top-left { top: 10px; left: 10px; }
+.top-right { top: 10px; right: 10px; }
+.bottom-left { bottom: 10px; left: 10px; }
+.bottom-right { bottom: 10px; right: 10px; }
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+.puppy, .flower { width: 200px; }
+.romantic-title {
+  font-size: 37px;
+  font-family: 'Great Vibes', cursive;
+  margin-bottom: 30px;
+  letter-spacing: 7px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.spaced-content {
+  margin: 50px 0;
+}
+.small-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: purple;
+  border: 2px solid red;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+.small-button:hover {
+  background-color: #a020f0;
+}
+
+@media (max-width: 600px) {
+  .large-heart { width: 100px; }
+  .romantic-title { font-size: 28px; }
+  .puppy, .flower { width: 120px; }
+  .small-button { padding: 6px 12px; font-size: 12px; }
+  .image-row { gap: 15px; }
+  .spaced-content-extra { margin: 20px 0; }
+}

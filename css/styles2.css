@@ -1,0 +1,57 @@
+body {
+    background-color: #ffc0cb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .heart {
+    position: absolute;
+  }
+  .large-heart { width: 110px; }
+  .top-left { top: 5px; left: 5px; }
+  .top-right { top: 5px; right: 5px; }
+  .bottom-left { bottom: 5px; left: 5px; }
+  .bottom-right { bottom: 5px; right: 5px; }
+  .romantic-title {
+    font-size: 36px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 8px;
+  }
+  .image-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  .gallery-img {
+    width: 100%;
+    max-width: 250px;
+    filter: drop-shadow(0 0 15px purple);
+  }
+  .romantic-text {
+    color: blueviolet;
+    font-size: 28px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    margin: 17px;
+  }
+  audio {
+    display: none;
+  }
+  audio::-webkit-media-controls-volume-slider {
+    volume: 0.2;
+  }
+
+  @media (max-width: 600px) {
+    .romantic-title { font-size: 24px; }
+    .gallery-img { max-width: 180px; }
+    .romantic-text { font-size: 18px; }
+    .large-heart { width: 80px; }
+  }
+  
